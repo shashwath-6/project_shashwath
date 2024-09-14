@@ -1,0 +1,28 @@
+import random
+answer=random.randint(1,10)
+a=0
+print(answer)
+while a!=answer:
+    a=int(input("Enter a number: "))
+    if a==answer:
+        print("Correct!")
+        break
+    elif a>answer:
+        print("Too high!")
+        b=int(input("Enter a number: "))
+        if b==answer:
+            print("Correct!")
+            break
+        else:
+            print("BETTER LUCK NEXT TIME")
+            print(answer)
+
+    else:
+        print("Too low!")
+        c=int(input("Enter a number: "))
+        if c==answer:
+            print("Correct!")
+            break
+        else:
+            print("BETTER LUCK NEXT TIME")
+            print(answer)
